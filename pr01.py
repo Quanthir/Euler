@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+numbers = 0
+for i in range(1000):
+    if i % 3 == 0 or i % 5 == 0:
+        numbers += i
+
+print(numbers)
+
+# One Liner
+
+print(sum([i for i in range(1000) if i % 3 == 0 or i % 5 == 0]))
